@@ -1,0 +1,9 @@
+.navLink {
+  text-decoration: none;
+
+  color: black;
+}
+
+.navLink:not(:last-child) {
+  margin-right: 40px;
+}
