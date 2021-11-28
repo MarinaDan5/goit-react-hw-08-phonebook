@@ -9,6 +9,7 @@ import PrivateRoute from './components/PrivateRoute';
 import PublicRoute from './components/PublicRoute';
 import AppBar from 'components/AppBar/AppBar';
 import Loader from './components/Loader/Loader';
+import './App.css';
 
 const HomeView = lazy(() => import('./view/HomeView/HomeView'));
 const RegisterView = lazy(() => import('./view/RegisterView/RegisterView'));

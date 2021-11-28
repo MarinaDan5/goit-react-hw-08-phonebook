@@ -1,6 +1,13 @@
 .headerBar {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
-  margin-right: 30px;
+  padding-top: 30px;
+  margin-bottom: 50px;
+  padding-bottom: 15px;
+  padding-right: 18px;
+  padding-left: 18px;
+  background: linear-gradient(#575e5e 35%, #8c9292 55%);
+}
+.header {
+  background: linear-gradient(#575e5e 35%, #8c9292 55%);
 }

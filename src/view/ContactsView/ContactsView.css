@@ -1,0 +1,32 @@
+.contact-list {
+  list-style: none;
+  padding-right: 18px;
+  padding-left: 18px;
+  padding-bottom: 30px;
+}
+.contact-list__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-list__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.title {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 50px;
+}
+.title-text {
+  margin-bottom: 12px;
+  margin-top: 12px;
+  font-family: 'Lobster', cursive;
+  font-size: 22px;
+  color: #005e7f;
+  font-weight: normal;
+  text-align: center;
+}
+.contact-list__text {
+  font-family: 'Titillium Web', sans-serif;
+}

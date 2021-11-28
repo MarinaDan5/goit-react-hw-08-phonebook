@@ -33,8 +33,8 @@ export default function RegisterView() {
   };
 
   return (
-    <div>
-      <h1>Register Page</h1>
+    <div className="container">
+      <h1 className=" mainTitle">Register Page</h1>
       <form className="form" onSubmit={handleSubmit}>
         <label>
           <p className="form__lable">Name </p>

@@ -30,7 +30,7 @@ export default function LoginView() {
 
   return (
     <div>
-      <h1>Login Page</h1>
+      <h1 className="mainTitle">Login Page</h1>
       <form className="form" onSubmit={handleSubmit}>
         <label>
           <p className="form__lable">E-mail </p>

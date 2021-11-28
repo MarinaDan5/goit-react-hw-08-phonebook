@@ -1,4 +1,13 @@
-.button {
+.userMenu__title {
+  margin-right: 15px;
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
+  color: #005e7f;
+  font-weight: normal;
+  text-align: center;
+}
+.userMenu .button {
+  background: transparent;
   cursor: pointer;
   display: inline-block;
   text-align: center;
@@ -13,12 +22,10 @@
   padding-top: 8px;
   padding-bottom: 8px;
   border-radius: 18px;
-  border: solid 5px;
-  background: linear-gradient(#7e8383 35%, #434848 55%);
+  border: solid 1px #434848;
   color: #61b6cd;
   position: relative;
   z-index: 1;
-  border: none;
   transform-style: preserve-3d;
   transition: background 350ms ease-in-out, color 150ms ease-in-out;
 }
@@ -29,30 +36,8 @@
   overflow: hidden;
   color: #fff;
 }
-
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.form__input {
-  border-radius: 5px;
-  height: 25px;
-  width: 280px;
-  margin-bottom: 12px;
-}
-.form__lable {
-  margin-bottom: 8px;
-  font-family: 'Lobster', cursive;
-}
-
-.filter-container {
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-}
-@media screen and (min-device-width: 320px) and (max-device-width: 479px) {
-  .button {
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .userMenu .button {
     font-size: 12px;
     font-weight: 400;
     padding-left: 8px;
@@ -60,10 +45,20 @@
     padding-top: 4px;
     padding-bottom: 4px;
   }
-  .form__lable {
+  .userMenu__title {
+    margin-right: 8px;
     font-size: 15px;
   }
-  .title-text {
+}
+@media screen and (min-device-width: 480px) and (max-device-width: 767px) {
+  .userMenu .button {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .userMenu__title {
+    margin-right: 8px;
     font-size: 18px;
   }
 }

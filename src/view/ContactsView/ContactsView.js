@@ -5,6 +5,8 @@ import Container from 'components/Container/Container';
 import Form from 'components/Form/Form';
 import Filter from 'components/Filter/Filter';
 
+import '../ContactsView/ContactsView.css';
+
 function ContactsView() {
   const contacts = useSelector(contactsSelectors.filterContacts);
   const dispatch = useDispatch();
@@ -20,8 +22,8 @@ function ContactsView() {
         {contacts.map(({ id, name, number }) => {
           return (
             <li className="contact-list__item" key={id}>
-              <p>{name}</p>
-              <p>{number}</p>
+              <p className="contact-list__text">{name}</p>
+              <p className="contact-list__text">{number}</p>
               <button className="button" id={id} onClick={() => onDelete(id)}>
                 Delete contact
               </button>

@@ -1,9 +1,31 @@
+.nav {
+  align-items: center;
+}
 .navLink {
   text-decoration: none;
-
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
   color: black;
+  align-self: center;
 }
 
 .navLink:not(:last-child) {
   margin-right: 40px;
+}
+.navLink:hover,
+.navLink:hover {
+  color: #005e7f;
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 479px) {
+  .navLink {
+    font-size: 15px;
+  }
+  .navLink:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+@media screen and (min-device-width: 480px) and (max-device-width: 767px) {
+  .navLink {
+    font-size: 18px;
+  }
 }
